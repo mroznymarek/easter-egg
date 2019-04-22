@@ -1,15 +1,32 @@
 import React from 'react'
 import paintedEgg from './egg-painted.svg'
 
+
+const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+
+    },
+    egg: {
+        width: '50vh',
+    }
+}
+
 const PaintedEgg = (props) => {
     return (
-        <div>
-            <h1>            
+        <div
+            style={styles.container}
+        >
+            <h1>
                 Wesołych świąt!!!
 			</h1>
             <img
+                style={styles.egg}
                 src={paintedEgg}
-                alt={'Coloured egg'}
+                alt={'Painted egg'}
             />
         </div>
     )

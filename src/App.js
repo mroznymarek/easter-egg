@@ -5,7 +5,6 @@ import PaintedEgg from './PaintedEgg'
 import NotPaintedEgg from './NotPaintedEgg'
 
 
-
 const App = (props) => {
 	return (
 		<div>
