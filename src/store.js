@@ -1,11 +1,12 @@
-import { createStore, compose, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
+import { createStore, combineReducers } from 'redux'
+import egg from './state/egg.js'
 
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const reducer = combineReducers({
+    egg
+})
 
 export const store = createStore(
-    composeEnhancers(
-        applyMiddleware(thunk)
-    )
+    reducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
