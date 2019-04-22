@@ -1,1 +1,1 @@
-Eastern egg - very small app :)
+Easter egg - very small app :)
